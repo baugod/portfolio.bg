@@ -1,0 +1,56 @@
+.footer {
+    background-color: #052d3c;
+    width: 100vw;
+    position:absolute;
+    display: flex;
+    bottom: 0;
+    justify-content:space-around;
+    align-items: center;
+  }
+
+  .redes_sociales{
+    display:inline-block;
+    font-size: 3rem;
+    margin-left: 3rem;
+  }
+  .redes_sociales img{
+    margin-right: 10px;
+    transition: all 500ms;
+    width: 30px;
+  }
+  .redes_sociales img:hover{
+    transform: scale(1.2);
+  }
+
+  .copy{
+    display: flex;
+    align-items: center;
+  }
+
+  .copy-email{
+    display: flex;
+    align-items: center;
+  }
+  
+  .copy a{
+    color: #fff;
+    margin-right: 50px;
+    margin-left: 7px;
+    text-decoration:underline;
+  }
+  .copy p{
+    color: #fff;
+  }
+  
+  @media screen and (max-width:655px) {
+    .copy{
+      display:table-column;
+      width: 13em;
+    }
+    .copy a{
+      display: inline-flex;
+    }
+    .copy p{
+      padding-top:10px;
+    }
+  }

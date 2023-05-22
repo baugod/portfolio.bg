@@ -1,0 +1,111 @@
+.menu{
+    background-color: #01161e;
+    height: 75px;
+    width: 100vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 5px 0 10px rgba(0, 0, 0, o.6);
+    font-family: 'Raleway', sans-serif; ;
+}
+
+.logo{
+    color: #fff;
+    font-size: 35px;
+    padding: 0 80px;
+    font-weight: bold;
+}
+
+.menu_items{
+    display: flex;
+    list-style: none;
+    margin-right: 10%;
+    margin-top: 15px;
+}
+
+.menu_items li {
+    border-radius: 3px;
+    margin: 0 5px;
+}
+
+.menu_items a {
+    padding: 7px 13px;
+    text-decoration: none;
+    font-size: 18px;
+    display: block;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+.menu_items li:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+    transition: .4s;
+}
+
+.bt_menu {
+    margin-right:30px;
+    font-size: 25px;
+    color: #ffffff;
+    background-color: transparent;
+    cursor: pointer;
+
+    display: none;
+}
+
+ul.show{
+    top: 65px;
+}
+
+@media screen and (max-width:952px){
+    .logo{
+        font-size: 30px;
+        padding-left: 35px;
+    }
+    .menu_items li a {
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 858px){
+    .menu{
+        height: 65px;
+    }
+    .bt_menu{
+        display: inline-flex;
+    }
+    .menu_items{
+        position:fixed;
+        width: 100vw;
+        height: calc(100% - 65px);
+        margin-top: 0;
+        padding-top: 10px;
+        background: #01161e;
+        top:-100vh;
+        text-align: center;
+        transition: all .5s;
+        flex-direction: column;
+    }
+    .menu_items li {
+        margin: 30px 0 0 0;
+        line-height: 30px;
+    }
+    .menu_items li:hover {
+        background: none;
+    }
+    .menu_items li a {
+        font-size: 20px;
+        color: #fff;
+        font-weight: bold;
+    }
+    .menu_items li a:hover{
+        color: #01161e;
+        background-color: rgba(255, 255, 255, 0.3);
+    }
+    .logo{
+        font-size: 25px;
+        padding-left: 35px;
+    }
+    
+}
+
+

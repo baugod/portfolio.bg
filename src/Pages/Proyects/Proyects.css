@@ -1,0 +1,39 @@
+.containerP{
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding-top: 1em;
+}
+
+.cardsP{
+    display: block;
+    font-family:Arial, Helvetica, sans-serif;
+   
+}
+
+.cardscont{
+    display: grid;
+    grid-template-columns:auto auto auto auto;
+    width: 90%;
+    margin-left: 5%;
+    margin-top: 2em;
+    justify-content: center;
+    align-content: center;
+}
+
+@media(max-width:860px){
+    .cardscont{
+        grid-template-columns: auto;
+    }
+}
+@media(min-width:860px){
+    .cardscont{
+        grid-template-columns: auto auto;
+    }
+}
+
+@media(min-width:1300px){
+    .cardscont{
+        grid-template-columns: auto auto auto;
+    }
+}

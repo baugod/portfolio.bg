@@ -1,0 +1,151 @@
+.body-about{
+    height: 100%;
+    color: #fff;
+    text-align: center;
+}
+
+.body-about span{
+    position: absolute;
+    background-color: #16526a;
+    
+    display: flex;
+    width: 100%;
+    bottom: 0px;
+    height: 50px;
+    animation:  bodya 7s;
+}
+@keyframes bodya {
+    from {
+        justify-content: center;
+        align-items: center;
+        width: 100vw;
+        height: 94%;
+    }
+    to {
+        width: 100%;
+        height: 90px;
+    }
+}
+
+
+.title-about{
+margin-top: 3%;
+font-size: large;
+}
+.title-about h1{
+
+    
+}
+.title-about h1 span{
+   position: absolute;
+   background-color: #16526a;
+   
+   right: 10px;
+   width: 0;
+   animation:  maquina 5s;
+}
+@keyframes maquina {
+    from {
+        justify-content: center;
+        align-items: center;
+        margin-top: 20px;
+        width: 90%;
+        height: 55px;
+    }
+    to {
+        width: 0;
+        height: 55px;
+    }
+}
+
+.aboutContainer {
+    display:flex;
+    justify-content: space-around;
+    text-align: center;
+    color: #fff;
+    margin: 0 40px;
+}
+
+.imgBauti {
+    display: flex;
+    align-items: center;
+}
+
+.bauti {
+    border-radius: 100px;
+    height: 500px;
+}
+
+.text-about {
+display: flex;
+background-color: rgb(0, 0, 0, 0.4);
+border-radius: 100px;
+text-align: center;
+align-items: center;
+padding: 2%;
+margin: 50px;
+color: #fff;
+font-size: 1em;
+}
+
+.about-skills{
+    height: 30rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.about-skills h2{
+    font-size: 3em;
+    margin-bottom: 10px;
+}
+
+.tecno-about{
+    padding:10px;
+}
+.tecno-about:hover{
+    
+}
+
+/*hasta 1170 anda bien*/
+
+@media screen and (max-width:1170px){
+    
+    .aboutContainer{
+        margin-left: 2%;
+        margin-right: 0;
+    }
+
+    .text-about{
+        padding: 5%;
+    }
+    
+    .bauti{
+        height: 400px;
+    }
+}
+
+@media screen and (max-width:720px){
+    .aboutContainer{
+        display: contents;
+    }
+
+    .bauti{
+        height: 300px;
+        padding-top: 10px;
+        
+    }
+
+    .imgBauti{
+        justify-content: center;
+        height: min-content;
+        width: 100vw;
+    }
+    .text-about{
+        margin: 2%;
+    }
+
+    .about-skills h2{
+        font-size: 2em;
+        margin-bottom: 20px;
+    }
+}
