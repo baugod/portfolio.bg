@@ -5,7 +5,6 @@ import javascript from "../../Components/Assets/javascript.svg";
 import css from "../../Components/Assets/css3.svg";
 import html from "../../Components/Assets/html-5.svg";
 import react from "../../Components/Assets/react.svg";
-import firebase from "../../Components/Assets/firebase.svg";
 import node from "../../Components/Assets/nodejs.svg";
 import redux from "../../Components/Assets/iredux.svg";
 import postgre from "../../Components/Assets/icons8-postgre-sql-a-free-and-open-source-relational-database-management-system-96.png";
@@ -33,7 +32,7 @@ export default function About() {
 
                             I am convinced that my experience in full stack development and my positive and collaborative attitude make me a great candidate for any work team.
                             <br />
-                            <br /> 
+                            <br />
                             I am excited to have the opportunity to work with you and achieve our goals together!
                         </h3>
                     </div>
@@ -41,15 +40,35 @@ export default function About() {
                 <div className="about-skills">
                     <h2>Skills:</h2>
                     <div className="tech-container">
-                    <img src={node} alt="Node JS" className="tecno-about"/>
-                    <img src={javascript} alt="Javascript" className="tecno-about"/>
-                    <img src={html} alt="HTML" className="tecno-about"/>
-                    <img src={css} alt="CSS" className="tecno-about" />
-                    <img src={react} alt="React" className="tecno-about" />
-                    <img src={redux} alt="Redux" className="tecno-about"/>
-                    <img src={postgre} alt="PostgreSQL" className="tecno-about"/>
-                    <img src={firebase} alt="Firebase" />
-                </div>
+                        <div className="tech-nombre">
+                            <img src={node} alt="Node JS" className="tecno-about" />
+                            <h4>Node JS</h4>
+                        </div>
+                        <div className="tech-nombre">
+                            <img src={javascript} alt="Javascript" className="tecno-about" />
+                            <h4>JavaScript</h4>
+                        </div>
+                        <div className="tech-nombre">
+                            <img src={html} alt="HTML" className="tecno-about" />
+                            <h4>HTML</h4>
+                        </div>
+                        <div className="tech-nombre">
+                            <img src={css} alt="CSS" className="tecno-about" />
+                            <h4>CSS</h4>
+                        </div>
+                        <div className="tech-nombre">
+                            <img src={react} alt="React" className="tecno-about" />
+                            <h4>React JS</h4>
+                        </div>
+                        <div className="tech-nombre">
+                            <img src={redux} alt="Redux" className="tecno-about" />
+                            <h4>Redux</h4>
+                        </div>
+                        <div className="tech-nombre">
+                            <img src={postgre} alt="PostgreSQL" className="tecno-about-postgre" />
+                            <h4>PostgreSQL</h4>
+                        </div>
+                    </div>
                 </div>
                 <span>&#160;</span>
             </div>

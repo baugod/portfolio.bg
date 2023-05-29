@@ -6,13 +6,13 @@
 
 .body-about span{
     position: absolute;
-    background-color: #16526a;
+    background-color: #124559;
     
     display: flex;
     width: 100%;
     bottom: 0px;
     height: 50px;
-    animation:  bodya 7s;
+    animation:  bodya 6s;
 }
 @keyframes bodya {
     from {
@@ -32,10 +32,7 @@
 margin-top: 3%;
 font-size: large;
 }
-.title-about h1{
 
-    
-}
 .title-about h1 span{
    position: absolute;
    background-color: #16526a;
@@ -102,11 +99,49 @@ font-size: 1em;
 .tecno-about{
     padding:10px;
 }
-.tecno-about:hover{
-    
+.tecno-about-postgre{
+    padding: 10px;
+    height: 165px;
 }
 
+.tech-container{
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+.tech-nombre{
+    background-color: #ffffff15;
+    margin: 2px;
+    position: relative;
+    margin-bottom: 10px;
+}
+
+.tech-nombre h4{
+    display: none;
+    justify-content: center;
+    position: relative;
+}
+
+.tech-nombre:hover h4{
+    display: flex;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.36);
+    margin:-10px 10px
+}
+
+
 /*hasta 1170 anda bien*/
+@media screen and (max-width:1200px){
+    .tech-container{
+        margin-top:20px;
+    }
+    .tecno-about{
+        height: 130px;
+    }
+    .tecno-about-postgre{
+        height: 130px;
+    } 
+}
 
 @media screen and (max-width:1170px){
     
@@ -124,7 +159,7 @@ font-size: 1em;
     }
 }
 
-@media screen and (max-width:720px){
+@media screen and (max-width:1000px){
     .aboutContainer{
         display: contents;
     }
@@ -147,5 +182,38 @@ font-size: 1em;
     .about-skills h2{
         font-size: 2em;
         margin-bottom: 20px;
+    }
+    .tech-container{
+        display: grid;
+        grid-template-columns: auto auto auto auto;
+    }
+    .tecno-about{
+        height: 120px;
+    }
+    .tecno-about-postgre{
+        height: 120px;
+    }
+}
+
+@media screen and (max-width:520px) {
+    .text-about{
+        padding: 7%;
+    }
+    .tech-container{
+        display: grid;
+        grid-template-columns: auto auto auto;
+        margin-top:10px;
+    }
+    .tecno-about{
+        height: 90px;
+    }
+    .tecno-about-postgre{
+        height: 90px;
+    }    
+}
+
+@media screen and (max-width:440px){
+    .text-about{
+        padding: 10%;
     }
 }
